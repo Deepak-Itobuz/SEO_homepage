@@ -1,0 +1,16 @@
+ <nav class="d-flex justify-content-around align-items-center p-2">
+            <div class="fw-semi-bold fs-3">nuvosa <img src="/IMAGES/nav_red_dot.png" alt=""></div>
+            <ul class="d-flex list-unstyled justify-content-around align-items-center w-50 ">
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Blog</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+            </ul>
+            <div>
+            <button class="btn border border-secondary px-5"><span>Let's Talk</span></button>
+            <button class="btn bg-warning ms-2">
+                <img src="/IMAGES/Search.png" alt="">
+            </button>
+        </div>
+        </nav>
