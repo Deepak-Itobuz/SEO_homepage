@@ -30,9 +30,11 @@ le {
 }
 
 .plans:hover {
-    background-color: #6f77f1;
+    background: url('/images/bg_plan.png');
+    background-size: cover;
+
     color: white;
-    /* zoom: 105%; */
+    zoom: 98%;
     /* box-sizing: unset; */
   }
   
@@ -91,9 +93,35 @@ le {
     border: 2px solid #6f77f1;
     padding: 0.3rem;
     rotate: -15deg;
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .first-header{
-    font-size: 4em;
+    font-size: 3em;
   }
+
+  
+
+  .nav-link:hover {
+
+    border-bottom: 2px solid  #6f77f1;
+  }
+
+  
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #E9E9E9;
+  border-radius: 100%;
+}
+.activated {
+  background-color: #6F77F1;
+}
+
+.current-card {
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.slider-card:hover {
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
