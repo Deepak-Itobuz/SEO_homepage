@@ -1,7 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;500&display=swap');
 
-* {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -22,12 +22,6 @@ le {
     color: #6f77f1;
 }
 
-
-/* section{ */
-    /* padding: 10px 10px; */
-/* } */
-
-
 .resized-img {
     width: 270px;
 }
@@ -42,11 +36,13 @@ le {
 }
 
 .plans:hover {
-    background: url('/images/bg_plan.png');
-    background-size: cover;
+    background: url('/images/bg_plan.png') no-repeat center;
+    /* background-size: cover; */
 
     color: white;
-    scale: 1.12;
+    /* scale: 1.12; */
+    transform: scale(1.1);
+    box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
     /* box-sizing: unset; */
   }
   
@@ -62,7 +58,8 @@ le {
   }
   
   .hover1:hover  {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
     border-radius: 2px;
   }
 
@@ -156,6 +153,7 @@ le {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .swiper-slide img {
@@ -165,6 +163,9 @@ le {
   object-fit: cover;
 }
 
+.swiper-slide-active {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
 /* .swiper-slide {
   width: 60%;
 }
@@ -214,4 +215,14 @@ button:hover {
   background-image: url('/images/four.png');
   background-position: right;
   background-repeat: no-repeat;
+}
+
+
+.nuvosa-help-section a, .footer a{
+text-decoration: none;
+color: black;
+}
+
+footer {
+  font-size: 18px;
 }
