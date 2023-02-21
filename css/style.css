@@ -18,7 +18,7 @@ body {
   font-weight: 600;
 }
 
-le {
+.last-element {
     color: #6f77f1;
 }
 
@@ -36,7 +36,7 @@ le {
 }
 
 .plans:hover {
-    background: url('/images/bg_plan.png') no-repeat center;
+    background: url('/images/our-plans/bg_plan.png') no-repeat center;
     /* background-size: cover; */
 
     color: white;
@@ -197,22 +197,22 @@ button:hover {
 
 
 .keyword-research{
-  background-image: url('/images/one.png');
+  background-image: url('/images/optimising-your-website/one.png');
   background-position: right;
   background-repeat: no-repeat;
 }
 .content-optimisation{
-  background-image: url('/images/two.png');
+  background-image: url('/images/optimising-your-website/two.png');
   background-position: right;
   background-repeat: no-repeat;
 }
 .target-analysis{
-  background-image: url('/images/three.png');
+  background-image: url('/images/optimising-your-website/three.png');
   background-position: right;
   background-repeat: no-repeat;
 }
 .continuous-testing{
-  background-image: url('/images/four.png');
+  background-image: url('/images/optimising-your-website/four.png');
   background-position: right;
   background-repeat: no-repeat;
 }
