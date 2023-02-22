@@ -1,4 +1,3 @@
-
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;500&display=swap');
 
 body {
@@ -27,12 +26,17 @@ body {
 }
 
 .research {
-    background-image: url(/images/Ellipse_red_optimise_section.png);
+    background-image: url(/images/optimising-your-website/Ellipse_red_optimise_section.png);
     background-repeat: no-repeat;
 }
 
 .continuous {
     background: white;
+}
+
+
+.hide {
+  display: none;
 }
 
 .plans:hover {
@@ -63,8 +67,15 @@ body {
     border-radius: 2px;
   }
 
-  .bottomhover:hover {
+  .bottom-hover::after {
+    width: 100%;
+    content: "";
     border-bottom:  2px solid #6f77f1;
+    opacity: 0;
+  }
+
+  .bottom-hover:hover::after{
+    opacity: 1;
   }
 
   .zig-zag {
@@ -115,9 +126,15 @@ body {
 
   
 
-  .nav-link:hover{
+  .nav-link::after{
     /* display: inline-block; */
+    content: "";
     border-bottom: 2px solid  #6f77f1;
+    opacity: 0;
+  }
+
+  .nav-link:hover::after{
+    opacity: 1;
   }
 
   
@@ -133,6 +150,7 @@ body {
 
 .current-card {
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+
 }
 
 .slider-card:hover {

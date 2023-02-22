@@ -1,25 +1,8 @@
 let card = document.querySelectorAll(".slider-card")
 let circle = document.querySelectorAll(".circle")
 let price = document.querySelectorAll(".plans")
-
-// let i = 0;
-
-// setInterval(() => {
-//     if (i < card.length - 1) {
-//         card[i].classList.remove("current-card")
-//         circle[i].classList.remove("activated")
-//         i++
-//         card[i].classList.add("current-card")
-//         circle[i].classList.add("activated")
-//     }
-//     else {
-//         card[i].classList.remove("current-card")
-//         circle[i].classList.remove("activated")
-//         i = 0
-//         card[i].classList.add("current-card")
-//         circle[i].classList.add("activated")
-//     }
-// }, 1500)
+const searchBar = document.querySelector(".search-bar");
+const searchBtn = document.querySelector(".search-btn");
 
 price.forEach ((ele) => {
   ele.addEventListener("mouseover", () =>{
@@ -34,22 +17,6 @@ price.forEach ((ele) => {
   } )
 } ) 
 
-
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 3,
-//     centeredSlides: true,
-//     spaceBetween: 30,
-//     grabCursor: true,
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//       },
-//     // freeMode:true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -69,4 +36,17 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
   },
+})
+
+searchBtn.addEventListener("click",()=>{
+if(searchBar.classList.contains("hide")){
+  searchBar.classList.remove('hide');
+}
+else
+{
+  searchBar.classList.add('hide');
+
+}
+
+
 })
